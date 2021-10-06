@@ -30,7 +30,7 @@ df
 
 # From Bruno:
 (df1 <- df %>% 
-    janitor::get_dupes(MajorCode, MinorCode) %>% 
+    get_dupes(MajorCode, MinorCode) %>% 
     group_by(dupe_count) %>%
     summarize(minValue=min(Value),
               maxValue=max(Value),
